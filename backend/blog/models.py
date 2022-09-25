@@ -32,7 +32,7 @@ class Post(models.Model):
 
     status = models.CharField(max_length=10, choices=options, default='draft')
     objects = models.Manager()
-    postobject = PostObjects()
+    postobjects = PostObjects()
 
     class Meta:
         ordering = ('-published',)
